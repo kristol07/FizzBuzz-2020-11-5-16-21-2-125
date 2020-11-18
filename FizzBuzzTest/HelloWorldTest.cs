@@ -62,5 +62,19 @@ namespace FizzBuzzTest
             //then
             Assert.Equal("2", actual);
         }
+
+        [Fact]
+        public void Should_return_Fizz_given_3()
+        {
+            //given
+            Dependency translator = new Dependency();
+            HelloWorld helloWorld = new HelloWorld(translator);
+
+            //when
+            string actual = helloWorld.Tranlate(3);
+
+            //then
+            Assert.Equal("Fizz", actual);
+        }
     }
 }
