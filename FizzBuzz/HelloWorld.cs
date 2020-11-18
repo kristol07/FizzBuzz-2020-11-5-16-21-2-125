@@ -18,32 +18,24 @@ namespace FizzBuzz
 
         public string Tranlate(int count)
         {
-            if (count % 3 == 0 && count % 5 == 0 && count % 7 == 0)
-            {
-                return "FizzBuzzWhizz";
-            }
-
-            if (count % 3 == 0 && count % 5 == 0)
-            {
-                return "FizzBuzz";
-            }
+            string word = string.Empty;
 
             if (count % 3 == 0)
             {
-                return "Fizz";
+                word += "Fizz";
             }
 
             if (count % 5 == 0)
             {
-                return "Buzz";
+                word += "Buzz";
             }
 
             if (count % 7 == 0)
             {
-                return "Whizz";
+                word += "Whizz";
             }
 
-            return count.ToString();
+            return word.Length == 0 ? count.ToString() : word;
         }
     }
 }
