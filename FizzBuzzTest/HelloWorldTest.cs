@@ -118,5 +118,19 @@ namespace FizzBuzzTest
             //then
             Assert.Equal("FizzBuzz", actual);
         }
+
+        [Fact]
+        public void Should_return_FizzBuzzWhizz_given_product_of_3_5_7()
+        {
+            //given
+            Dependency translator = new Dependency();
+            HelloWorld helloWorld = new HelloWorld(translator);
+
+            //when
+            string actual = helloWorld.Tranlate(3 * 5 * 7);
+
+            //then
+            Assert.Equal("FizzBuzzWhizz", actual);
+        }
     }
 }
