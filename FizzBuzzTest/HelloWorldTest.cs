@@ -90,5 +90,19 @@ namespace FizzBuzzTest
             //then
             Assert.Equal("Buzz", actual);
         }
+
+        [Fact]
+        public void Should_return_Whizz_given_7()
+        {
+            //given
+            Dependency translator = new Dependency();
+            HelloWorld helloWorld = new HelloWorld(translator);
+
+            //when
+            string actual = helloWorld.Tranlate(7);
+
+            //then
+            Assert.Equal("Whizz", actual);
+        }
     }
 }
