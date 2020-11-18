@@ -18,7 +18,7 @@ namespace FizzBuzz
 
         public string Tranlate(int count)
         {
-            return "1";
+            return count.ToString();
         }
     }
 }
