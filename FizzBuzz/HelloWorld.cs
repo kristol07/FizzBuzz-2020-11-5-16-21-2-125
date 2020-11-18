@@ -18,6 +18,11 @@ namespace FizzBuzz
 
         public string Tranlate(int count)
         {
+            if (count % 3 == 0 && count % 5 == 0)
+            {
+                return "FizzBuzz";
+            }
+
             if (count % 3 == 0)
             {
                 return "Fizz";
