@@ -15,5 +15,10 @@ namespace FizzBuzz
         {
             return dependency.Say();
         }
+
+        public string Tranlate(int count)
+        {
+            return "1";
+        }
     }
 }
